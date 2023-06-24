@@ -1,0 +1,9 @@
+*build/
+*.zip
+*dataset/
+*settings.json
+*.jpg
+*.png
+*.avi
+*.txt
+.vscode
