@@ -13,3 +13,10 @@ python3 scripts/rotation.py
 ```bash
 python3 scripts/pose2T.py
 ```
+
+## combine_CSV.py:
+将数据类型相同的CSV文件合并，保存为新的文件。
+### How to use:
+```bash
+python3 scripts/combine_CSV.py
+```
