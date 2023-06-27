@@ -13,17 +13,17 @@ def Verify(pose_data):
             pose_curr=pose_data[i]
             if i>50:
                 index=-1
-                maxdis=1000000
+                mindis=1000000
                 for j in range(i-50):
                     pose_pre=pose_data[j]
                     distance= math.sqrt((pose_pre[0] - pose_curr[0]) ** 2 + (pose_pre[1] - pose_curr[1]) ** 2 + (pose_pre[2] - pose_curr[2]) ** 2)
-                    if maxdis>distance:
+                    if mindis>distance:
                         index=j
-                        maxdis=distance
-                if maxdis < 0.5 :
+                        mindis=distance
+                if mindis < 0.5 :
                     
                     #array.append(j,i)
-                    f.write(str(i)+' '+str(j)+' '+str(maxdis)+'\n')
+                    f.write(str(i)+' '+str(j)+' '+str(mindis)+'\n')
     #np.savetxt('/EXTERNAL/homes/mengshj/new_catkin_ws/src/SC-A-LOAM/save_data/LCD_gt.txt', array, delimiter=' ')
 
 def ReadVeri():
