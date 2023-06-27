@@ -10,7 +10,7 @@ source env/bin/activate
 pip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-
+***以下所有内容都需要修改文本路径为自己的源路径和目标路径**
 
 ## rotation.py:
 读取kitti格式的txt文件，对其中所有数据进行旋转变换，最后保存为新的文件。
