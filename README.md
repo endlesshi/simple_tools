@@ -20,3 +20,10 @@ python3 scripts/pose2T.py
 ```bash
 python3 scripts/combine_CSV.py
 ```
+
+## remove_blank.py:
+去除文件中每一行最后的空格，保存为新的文件。
+### How to use:
+```bash
+python3 scripts/combine_CSV.py
+```

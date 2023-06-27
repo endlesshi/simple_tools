@@ -9,3 +9,4 @@
 .vscode
 .gitignore
 *.mp4
+*env/
