@@ -7,7 +7,7 @@
 ```bash
 python3.9 -m venv env
 source env/bin/activate
-pip install XXX -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple XXX
 ```
 
 ***以下所有内容都需要修改文本路径为自己的源路径和目标路径**
@@ -51,4 +51,18 @@ python3 scripts/LCD_gt.py
 ### How to use:
 ```bash
 python3 scripts/LCD_draw.py
+```
+
+## divide_pcd.py:
+将pcd分成3份保存在3个文件夹中
+### How to use:
+```bash
+python3 scripts/divide_pcd.py
+```
+
+## divide_gt.py:
+将gt分成3份保存，起始都是000
+### How to use:
+```bash
+python3 scripts/divide_gt.py
 ```

@@ -19,7 +19,7 @@ def pose_diff(T1, T2):
     :param T2: 齐次变换矩阵
     :return: 齐次变换矩阵
     """
-    T_rel = np.dot(T2, np.linalg.inv(T1))
+    T_rel = np.dot(np.linalg.inv(T1),T2)
     return T_rel
 
 def transform_matrix(T_rel):

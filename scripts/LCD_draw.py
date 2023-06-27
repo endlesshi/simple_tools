@@ -41,8 +41,8 @@ def DrawLCD():
         curr=gt[i]
         s=int(curr[0])
         t=int(curr[1])
-        # if abs(s-t)<1000:
-        #     continue
+        if abs(s-t)<1000:
+            continue
         #print(s,' ',t)
         ax.plot([points[s,0],points[t,0]],[points[s,1],points[t,1]],[points[s,2],points[t,2]-300],color='r')
 
